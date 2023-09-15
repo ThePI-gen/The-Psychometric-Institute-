@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="The Psychometric Institute">
+		<meta name="description" content="Understanding the Psychometrics">
+
+		<title>HTML</title>
+
+		<!-- HTML -->
+		<link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
+
+		<!-- Custom Styles -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<!-- Google fonts -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;700&family=Quicksand:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/4f89df3a85.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"
+						><img src="logo.svg" alt="logo.svg" width="100"
+					/></a>
+					<button
+						class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="toggler-icon top-bar"></span>
+						<span class="toggler-icon middle-bar"></span>
+						<span class="toggler-icon bottom-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav justify-content-end flex-grow-1">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="./">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#course">Course</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#faq">Faq</a>
+							</li>
+							<li class="nav-item">
+								<a type="submit" href="#" class="btn btn-danger pBtn"
+									>Enroll Now</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- welcome -->
+			<section>
+				<div class="main-hero ds-grid">
+					<div class="welcome-text ds-flex-col centre spacebox2">
+						<h3><span>Prepare for</span> Opportunities</h3>
+
+						<p class="small-text">
+							“If opportunity doesn’t knock, build a door.”
+						</p>
+						<p class="lg-text">
+							“When one door of happiness closes, another opens; but often we
+							look so long at the closed door that we do not see the ones which
+							has been opened for us”
+						</p>
+
+						<div class="info d-none d-lg-block">
+							<p>
+								<i class="fa-solid fa-graduation-cap"></i> Over 100,000 Students
+							</p>
+							<p>
+								<i class="fa-solid fa-building-columns"></i> Over 300 Registered
+								School
+							</p>
+							<p><i class="fa-solid fa-globe"></i> Learn Online Comfortably</p>
+						</div>
+
+						<div class="btn-field ds-flex-row spacebox">
+							<a href="#" class="btn btn-danger pBtn">Enroll Now</a>
+							<a href="#" class="btn btn-danger pBtn second-btn">Contact us</a>
+						</div>
+					</div>
+					<div id="welCome" class="carousel slide" data-bs-ride="carousel">
+						<div class="square">
+							<img src="square.svg" alt="square" />
+						</div>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#welCome"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#welCome"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#welCome"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="8000">
+								<img
+									src="./img/close-up-students-learning-class.jpg"
+									class="d-block w-100 h-100"
+									alt="..."
+								/>
+								<div class="carousel-caption d-none d-lg-block">
+									<h3>Ignite Your Learning Journey</h3>
+									<p>
+										<!-- In The PI, we believe in the power of Knowledgeto transform
+									lives.-->
+										Our courses are designed to give you the flexibility to lear
+										at your own pace and your own terms, so you can ignite your
+										learning journey.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item" data-bs-interval="8000">
+								<img
+									src="./img/students-talking-during-lecture-university_249974-14463.jpg"
+									class="d-block w-100 h-100"
+									alt="..."
+								/>
+								<div class="carousel-caption d-none d-lg-block">
+									<h3>Unleash Yor Potentials</h3>
+									<p>
+										We empower you to accesss high-quality courses from top
+										institutions and experts, ensuring that your potential is
+										truly unleashed.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item" data-bs-interval="8000">
+								<img
+									src="./img/study-group-african-people.jpg"
+									class="d-block w-100 h-100"
+									alt="..."
+								/>
+								<div class="carousel-caption d-none d-lg-block">
+									<h3>Online Learning, Offline Success</h3>
+									<p>
+										In The PI, we combine the convenienceof digital education
+										with offline success, equipping you with the knowledge and
+										skills to achieve your dreams.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info m-info d-md-none">
+					<p>
+						<i class="fa-solid fa-graduation-cap"></i> Over 100,000 Students
+					</p>
+					<p>
+						<i class="fa-solid fa-building-columns"></i> Over 300 Registered
+						School
+					</p>
+					<p><i class="fa-solid fa-globe"></i> Learn Online Comfortably</p>
+				</div>
+			</section>
+			<!-- welcome ends -->
+			<!-- Understanding -->
+			<section id="course">
+				<h4>Top Course</h4>
+				<h3>Explore Our To Course</h3>
+				<div class="course-con ds-grid">
+					<div class="course-img">
+						<img src="img/book.svg" alt="understanding Psychometrics" />
+					</div>
+					<div class="course-text ds-flex-col centre">
+						<h3>Understanding Psychometrics</h3>
+						<div>
+							<p>
+								The course "Understanding Psychometric" is designed to introduce
+								participants to the fundamental concepts and principles of
+								psychometrics. Psychometrics is the field of study focused on
+								the measurement of psychological attributes and behaviors. The
+								course provides an overview of various psychometric tools and
+								techniques used to assess and quantify traits such as
+								intelligence, personality, abilities, interests, and attitudes.
+							</p>
+
+							<p>
+								Throughout the course, participants learn about the development
+								and administration of psychometric tests, ensuring their
+								reliability and validity. They explore statistical methods used
+								in psychometrics to analyze test data, interpret scores, and
+								draw meaningful conclusions.By the end of the course,
+								participants acquire a foundational understanding of
+								psychometrics, equipping them with valuable knowledge to
+								appreciate and interpret the outcomes of psychometric tests with
+								critical thinking and a well-informed perspective.
+							</p>
+						</div>
+						<a class="btn btn-danger pBtn" href="#">Enroll Now</a>
+					</div>
+				</div>
+			</section>
+			<!-- Understanding ends -->
+			<!-- Opportunity hero ends -->
+			<section id="opportunity" class="opp ds-flex-col centre">
+				<h4>Opportunities in Psychometrics</h4>
+				<h3>Want To Know The Benefits of The Psychometrics</h3>
+				<div class="opp-con con ds-grid centre">
+					<div class="cardbox">
+						<div class="cardbox-img"></div>
+						<div class="cardbox-text">
+							<h3>Comprehensive Knowledge</h3>
+							<div class="icon ds-flex-col centre">
+								<i class="fa-solid fa-brain"></i>
+							</div>
+							<p>
+								Gain vital skills in measurements and assessment, opening doors
+								to careers in research, education, clinical psychology and
+								beyond
+							</p>
+						</div>
+					</div>
+					<div class="cardbox">
+						<div class="cardbox-img"></div>
+						<div class="cardbox-text card-red">
+							<h3>Practical Application</h3>
+							<div class="icon ds-flex-col centre">
+								<i class="fa-solid fa-toolbox"></i>
+							</div>
+							<p>
+								Acquire real-world expertise in test construction and
+								measurement techniques. Be the go-to expert for precise
+								assessmentand evaluation in organisations
+							</p>
+							<!-- Students gain practical skills in test construction, item
+								analysis, and measurement techniques. -->
+						</div>
+					</div>
+					<div class="cardbox">
+						<div class="cardbox-img"></div>
+						<div class="cardbox-text">
+							<h3>Career Advancement</h3>
+							<div class="icon ds-flex-col centre">
+								<i class="fa-solid fa-helmet-safety"></i>
+							</div>
+							<!-- The course enhances students' career prospects by increasing
+								their expertise in psychometrics. -->
+							<p>
+								Dive into psychometricsto open doors to a myriad of career
+								Opportunities in academia and industry, where you'll be at the
+								forefront of shaping assessments for the future.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Opportunity hero ends -->
+			<!-- Faculty hero -->
+
+			<section id="faculty">
+				<h4>The Faculties</h4>
+				<h3>Our Experts in The PI</h3>
+				<p>
+					These academic staff members bring a wealth of knowledge, expertise,
+					and enthusiasm to the classroom, ensuring a stimulating and enriching
+					learning experience for students pursuing the study of psychometrics.
+					Their dedication to research, commitment to excellence, and passion
+					for teaching make them invaluable assets to the academic institution
+					and its students.
+				</p>
+				<div class="faculty-con">
+					<div class="faculty-info">
+						<div class="faculty-img">
+							<img
+								src="./img/faculties/sarahanderson.jpg"
+								alt="sarahanderson"
+								width="100%"
+								id="newImage"
+							/>
+						</div>
+						<div class="faculty-text" id="newText">
+							<h3>Dr. Sarah Anderson</h3>
+
+							<p>
+								Dr. Sarah Anderson is an esteemed professor of Psychometrics
+								with extensive experience in teaching and research. She holds a
+								Ph.D. in Psychology from a renowned university and has been
+								actively involved in the field of psychometrics for over two
+								decades.
+							</p>
+
+							<p>
+								Dr. Anderson's research interests lie in measurement theory,
+								test development, and validation. Her expertise in statistical
+								analysis and psychometric methods makes her a valuable asset in
+								the classroom. Students appreciate her engaging teaching style,
+								depth of knowledge, and commitment to fostering a deep
+								understanding of psychometrics.
+							</p>
+
+							<!--
+	Dr. Michael Johnson
+	
+	Dr. Michael Johnson is a dedicated scholar with a specialization in psychometrics. He earned his Ph.D. in Educational Measurement and Statistics and has published numerous research articles in reputable journals. Dr. Johnson's research focuses on item response theory, equating methods, and test fairness. He brings a wealth of practical experience in test construction and analysis, ensuring students gain a comprehensive understanding of the subject matter. His enthusiasm for teaching and passion for psychometrics make his classes engaging and thought-provoking.
+	
+	
+	3. Prof. Elizabeth Thompson
+	
+	Prof. Elizabeth Thompson is a highly accomplished professor renowned for her expertise in psychometrics and educational assessment. With a distinguished career spanning over three decades, she has made significant contributions to the field through her research and consultancy work. Prof. Thompson's vast knowledge encompasses areas such as classical test theory, factor analysis, and measurement invariance. Her engaging teaching style and ability to simplify complex concepts have made her a sought-after instructor. Students appreciate her dedication to fostering a deep understanding of psychometrics and its practical applications.
+	
+	
+	4. Dr. James Williams
+	
+	Dr. James Williams is an experienced educator with a strong background in psychometrics and measurement. He holds a Ph.D. in Psychometrics and has worked on various research projects focusing on test development and validation. Dr. Williams' expertise extends to computerized adaptive testing, test equating, and latent variable modeling. His dynamic teaching style and ability to relate complex concepts to real-world applications create an engaging learning environment for students. Driven by his passion for psychometrics, Dr. Williams strives to inspire students to excel in the field.
+	
+	
+	5. Prof. Catherine Reed
+	
+	Prof. Catherine Reed is a respected scholar in the field of psychometrics, known for her exceptional research contributions and expertise in measurement theory. With a background in quantitative psychology, Prof. Reed holds a Ph.D. from a prestigious university and has published extensively on psychometric modeling and scaling techniques. Her research interests also include item response theory and differential item functioning. Prof. Reed's teaching approach emphasizes critical thinking and analytical skills, fostering a deep understanding of psychometrics among her students.
+	-->
+						</div>
+					</div>
+					<div class="faculty-control">
+						<div class="control-item active" onclick="changeContentItem1()">
+							<img
+								src="./img/faculties/sarahanderson.jpg"
+								alt="sarahanderson"
+								width="100%"
+								class="img-lt"
+							/>
+						</div>
+						<div class="control-item" onclick="changeContentItem2()">
+							<img
+								src="./img/faculties/James Williams.jpg"
+								alt="James Williams"
+								width="100%"
+								class="img-lt"
+							/>
+						</div>
+						<div class="control-item" onclick="changeContentItem3()">
+							<img
+								src="./img/faculties/Catherine Thompson.jpg"
+								alt="Catherine Thompson"
+								width="100%"
+								class="img-lt"
+							/>
+						</div>
+						<div class="control-item" onclick="changeContentItem4()">
+							<img
+								src="./img/faculties/Michael Johnson.jpg"
+								alt="Michael Johnson"
+								width="100%"
+								class="img-lt"
+							/>
+						</div>
+						<div class="control-item" onclick="changeContentItem5()">
+							<img
+								src="./img/faculties/catherinereeds.jpg"
+								alt="catherinereeds"
+								width="100%"
+								class="img-rt"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Faculty hero ends -->
+			<!-- course count -->
+			<section id="student">
+				<div class="student">
+					<div class="student-con ds-grid">
+						<div class="student-item">
+							<div class="ds-flex-col centre">
+								<i class="fa-solid fa-graduation-cap"></i>
+							</div>
+							<p class="title">150000+</p>
+							<p>(enrolled students)</p>
+						</div>
+						<div class="student-item">
+							<div class="ds-flex-col centre">
+								<i class="fa-solid fa-building-columns"></i>
+							</div>
+							<p class="title">300+</p>
+							<p>(registered schools)</p>
+						</div>
+						<div class="student-item">
+							<div class="ds-flex-row centre">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half-stroke"></i>
+							</div>
+							<p class="title">4.8 Stars</p>
+							<p>(over 46k ratings)</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- course ends -->
+			<!-- why choose us -->
+			<section id="choose">
+				<div class="choose">
+					<h4>Why choose ThePI</h4>
+					<h3>What we offer to Every Student</h3>
+					<div class="choose-con ds-grid centre">
+						<div class="choose-list ds-grid">
+							<div class="choose-img">
+								<img
+									src="./img/faculties/Michael Johnson.jpg"
+									alt="Expert Instructors"
+									title="Expert Instructors"
+									width="100%"
+								/>
+							</div>
+							<div class="choose-info ds-flex-col centre">
+								<p class="title-text">Expert Instructors</p>
+								<p>
+									Our courses are taught by experienced professionals and
+									scholars who have in-depth knowledge of psychometrics. They
+									bring real-world expertise and a passion for teaching to the
+									virtual classroom, ensuring a rich and engaging learning
+									experience.
+								</p>
+							</div>
+						</div>
+
+						<div class="choose-list ds-grid">
+							<div class="choose-img">
+								<img src="./img/curriculum.png" alt="curriculum" width="100%" />
+							</div>
+							<div class="choose-info ds-flex-col centre">
+								<p class="title-text">Comprehensive Curriculum</p>
+								<p>
+									Our curriculum is designed to cover all essential topics in
+									psychometrics, ranging from fundamental concepts to advanced
+									theories and applications. Each course is carefully structured
+									to provide a balanced blend of theoretical knowledge and
+									practical skills.
+								</p>
+							</div>
+						</div>
+						<div class="choose-list ds-grid">
+							<div class="choose-img">
+								<img
+									src="./img/interactive_leraning.jpg"
+									alt="interactive_leraning"
+									width="100%"
+								/>
+							</div>
+							<div class="choose-info ds-flex-col centre">
+								<p class="title-text">Interactive Learning</p>
+								<p>
+									Our online platform incorporates various interactive elements,
+									including video lectures, quizzes, discussions, and hands-on
+									activities. These features enhance student engagement and
+									facilitate active learning, allowing students to apply their
+									knowledge in real-world scenarios.
+								</p>
+							</div>
+						</div>
+						<div class="choose-list ds-grid">
+							<div class="choose-img">
+								<img
+									src="./img/flexibility and convenience.jpg"
+									alt="flexibility"
+									width="100%"
+								/>
+							</div>
+							<div class="choose-info ds-flex-col centre">
+								<p class="title-text">Flexibility and Convenience</p>
+								<p>
+									We recognize the importance of flexibility in education. Our
+									online courses can be accessed anytime, anywhere, allowing
+									students to study at their own pace and according to their own
+									schedules. Whether you're a full-time student, a working
+									professional, or juggling multiple commitments, our courses
+									can fit seamlessly into your lifestyle.
+								</p>
+							</div>
+						</div>
+						<div class="choose-list ds-grid">
+							<div class="choose-img">
+								<img
+									src="./img/suport.jpg"
+									alt="community support"
+									width="100%"
+								/>
+							</div>
+							<div class="choose-info ds-flex-col centre">
+								<p class="title-text">Community Support</p>
+								<p>
+									At The Psychometric Institute, we foster a sense of community
+									and collaboration among our learners. Our online forums and
+									discussion boards provide a platform for students to connect,
+									share insights, and seek support from instructors and peers.
+								</p>
+							</div>
+						</div>
+						<div class="choose-list ds-grid">
+							<div class="choose-img">
+								<img
+									src="./img/practical_application.jpg"
+									alt="practical_application"
+									width="100%"
+								/>
+							</div>
+							<div class="choose-info ds-flex-col centre">
+								<p class="title-text">Practical Application</p>
+								<p>
+									We believe in bridging the gap between theory and practice.
+									Our courses emphasize the practical application of
+									psychometric principles, equipping students with the skills
+									necessary to develop, evaluate, and utilize psychometric
+									instruments in various settings.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- why choose us ends-->
+			<!-- banner -->
+			<section id="banner">
+				<div class="highlg ds-flex-col centre">
+					<p>
+						Join us at The Psychometric Institute and embark on a transformative
+						learning journey in the fascinating field of psychometrics. Explore
+						our diverse course offerings, engage with experienced instructors,
+						and connect with a community of like-minded learners. Together,
+						let's unlock the power of psychometrics and make a positive impact
+						in the world.
+					</p>
+
+					<a href="#" class="btn btn-danger pBtn">Enroll Now</a>
+				</div>
+			</section>
+			<!-- banner ends -->
+			<!-- about -->
+			<section id="about">
+				<h4>About Us</h4>
+				<h3>Learn & Grow Your skills from anywhere</h3>
+				<div class="about ds-grid">
+					<div class="about-img">
+						<img src="./square.svg" alt="square" width="100%" class="sq-red" />
+						<img src="./square2.svg" alt="square" width="100%" class="sq-blue" />
+						<img
+							src="./img/ThePi.png"
+							alt="The Psychometric Institute"
+							width="100%"
+						/>
+					</div>
+					<div class="about-us ds-flex-col">
+						<p class="title-text">
+							Welcome to The Psychometric Institute's online platform for
+							Psychometrics education!
+						</p>
+						<p>
+							We are dedicated to providing high-quality, accessible, and
+							comprehensive learning experiences in the field of psychometrics.
+							Our goal is to empower students and professionals with the
+							knowledge and skills necessary to understand and apply
+							psychometric principles effectively.
+						</p>
+
+						<p>
+							At The Psychometric Institute, we understand the importance of
+							flexible learning options in today's fast-paced world. That's why
+							we have developed an interactive online platform that allows
+							learners to study at their own pace, from anywhere in the world.
+							Whether you're a student seeking to deepen your understanding of
+							psychometrics or a professional looking to enhance your skills,
+							our courses are designed to cater to your individual needs.
+						</p>
+
+						<button type="submit" class="btn btn-danger pBtn">
+							Enroll Now
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- about ends -->
+			<!-- FAQ -->
+			<section id="faq">
+				<div class="faq-con ds-flex-col centre">
+					<h4>FAQ</h4>
+					<h3>Have any Questions For Us</h3>
+					<div class="faq-con-item ds-grid centre">
+						<div class="faq-img">
+							<img
+								src="./img/faq-1.jpg"
+								alt="frequently asked questions"
+								width="100%"
+							/>
+						</div>
+						<div class="faq-acc">
+							<div class="faq-item">
+								<div class="question ds-flex-row centre">
+									<h4>
+										How can I enroll in the online Psychometrics course at The
+										PI?
+									</h4>
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+								<div class="answer open">
+									<p>
+										To enroll in the online Psychometrics course, simply visit
+										our website at
+										<a href="#">www.thepsychomectricinstitute.org</a> and
+										navigate to the course page. Click on the
+										<span>"Enroll Now" </span>button and follow the prompts to
+										create an account. Once you've created an account, you can
+										proceed with the payment process and gain immediate access
+										to the course materials.
+									</p>
+								</div>
+							</div>
+							<div class="faq-item">
+								<div class="question ds-flex-row centre">
+									<h4>
+										What's the duration of the online Psychometrics course?
+									</h4>
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+								<div class="answer">
+									<p>
+										The duration of the online Psychometrics course at The
+										Psychometric Institute is a per-semester based class. Each
+										module of the course is designed to be completed within a
+										semester time frame. However, our online platform allows you
+										the flexibility to study at your own pace, so you can
+										complete the course within the scheduled timeline.
+									</p>
+								</div>
+							</div>
+							<div class="faq-item">
+								<div class="question ds-flex-row centre">
+									<h4>How can I access the course materials and resources?</h4>
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+								<div class="answer">
+									<p>
+										Upon enrollment, you will be granted access to our
+										user-friendly online learning platform. This platform serves
+										as the central hub for all course materials, resources, and
+										interactive components. You can access video lectures,
+										readings, quizzes, assignments, and discussions directly
+										from the platform. The course materials are available 24/7,
+										allowing you to study at your convenience from anywhere with
+										an internet connection.
+									</p>
+								</div>
+							</div>
+							<div class="faq-item">
+								<div class="question ds-flex-row centre">
+									<h4>How can I make an online payment for the course?</h4>
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+								<div class="answer">
+									<p>
+										To make an online payment for the Psychometrics course at
+										The Psychometric Institute, follow these steps:
+									</p>
+									<ul>
+										<li>Go to our website and navigate to the course page.</li>
+
+										<li>Click on the "Enroll Now" button.</li>
+
+										<li>You will be directed to a secure payment portal.</li>
+
+										<li>
+											Choose your preferred payment method, such as a credit
+											card.
+										</li>
+
+										<li>
+											Enter the required payment details and complete the
+											transaction.
+										</li>
+
+										<li>
+											Once the payment is successful, you will receive a
+											confirmation email with access instructions.
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="faq-item">
+								<div class="question ds-flex-row centre">
+									<h4>
+										Are there any prerequisites for enrolling in the
+										Psychometrics course?
+									</h4>
+									<i class="fa-solid fa-angle-down"></i>
+								</div>
+								<div class="answer">
+									<p>
+										No specific prerequisites are required for enrolling in the
+										Psychometrics course at The Psychometric Institute. However,
+										a basic understanding of psychology and statistics would be
+										beneficial. The course is designed to cater to both
+										beginners and individuals with prior knowledge in the field.
+										Our instructors provide comprehensive explanations and
+										support throughout the course to ensure all learners can
+										grasp the concepts effectively.
+									</p>
+									<p>
+										If you have any additional questions or concerns, please
+										feel free to reach out to our support team at
+										<a href="#">info@thepsychometricinstitute.org</a> Our
+										dedicated staff is available to assist you and provide
+										further guidance on your learning journey.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <a href="#" class="btn-danger pBtn btn">Enroll Now</a> -->
+				</div>
+				<script>
+					const accordionItems = Array.from(
+						document.querySelectorAll(".faq-item"),
+					);
+
+					accordionItems.forEach((item) => {
+						const title = item.querySelector(".question");
+						const content = item.querySelector(".answer");
+
+						title.addEventListener("click", () => {
+							accordionItems.forEach((otherItem) => {
+								if (otherItem !== item) {
+									otherItem.querySelector(".answer").classList.remove("open");
+								}
+							});
+							// Toggle the display of the content when the title is clicked
+							content.classList.toggle("open");
+
+							console.log(document.querySelector(".open"));
+						});
+					});
+				</script>
+			</section>
+			<!-- FAQ ends -->
+			<!-- contact -->
+
+			<section id="contact">
+				<h4>Contact us</h4>
+				<h3>We're Here To Help</h3>
+				<div class="contact-con">
+					<div class="contact-info ds-flex-col centre">
+						<h3>Have a question?</h3>
+						<p>
+							Didn't get the infomation you're looking for? Click any of the
+							links below to get in touch with us.
+						</p>
+					</div>
+					<div class="contact-links ds-grid centre">
+						<a href="#"
+							><div class="contact-links-items ds-flex-row centre">
+								<p>
+									<i class="fa-brands fa-whatsapp"></i>Chat Us
+									<!--on Whatsapp-->
+								</p>
+							</div></a
+						>
+						<a href="mailto:admin@thepsychometricinstitute.org"
+							><div class="contact-links-items ds-flex-row centre">
+								<p><i class="fa-solid fa-envelope"></i>Email Us</p>
+							</div></a
+						>
+						<a href="tel:08183343350"
+							><div class="contact-links-items ds-flex-row centre">
+								<p><i class="fa-solid fa-mobile"></i>Call Us</p>
+							</div></a
+						>
+						<!-- <a href="#"><div class="contact-links-items"></div></a> -->
+					</div>
+				</div>
+			</section>
+
+			<!-- contact ends -->
+			<!-- partnership -->
+			<section id="brands">
+				<h4>Our Partners</h4>
+				<h3>Trusted Partners with The PI</h3>
+				<div class="partner-con">
+					<marquee behavior="scroll" direction="right" loop>
+						<div class="brands ds-flex-row">
+							<img src="./img/logos/180845_90c.jpg" alt="" width="100%" />
+							<img src="./img/logos/180924_149.jpg" alt="" width="100%" />
+							<img src="./img/logos/181030_5cf.jpg" alt="" width="100%" />
+							<img src="./img/logos/181044_6cd.jpg" alt="" width="100%" />
+							<img src="./img/logos/181058_344.jpg" alt="" width="100%" />
+							<img src="./img/logos/181121_e80.jpg" alt="" width="100%" />
+							<img src="./img/logos/181139_0b7.jpg" alt="" width="100%" />
+							<img src="./img/logos/181153_121.jpg" alt="" width="100%" />
+							<img src="./img/logos/181209_61e.jpg" alt="" width="100%" />
+							<img src="./img/logos/181225_0ca.jpg" alt="" width="100%" />
+							<img src="./img/logos/181240_4e4.jpg" alt="" width="100%" />
+							<img src="./img/logos/181257_08b.jpg" alt="" width="100%" />
+							<img src="./img/logos/181313_531.jpg" alt="" width="100%" />
+							<img src="./img/logos/181332_42d.jpg" alt="" width="100%" />
+							<img src="./img/logos/181400_c70.jpg" alt="" width="100%" />
+							<img src="./img/logos/181416_2b7.jpg" alt="" width="100%" />
+							<img src="./img/logos/181432_583.jpg" alt="" width="100%" />
+							<img src="./img/logos/181445_d96.jpg" alt="" width="100%" />
+							<img src="./img/logos/181500_f30.jpg" alt="" width="100%" />
+							<img src="./img/logos/181515_d24.jpg" alt="" width="100%" />
+							<img src="./img/logos/181528_faf.jpg" alt="" width="100%" />
+							<img src="./img/logos/181543_300.jpg" alt="" width="100%" />
+							<img src="./img/logos/181556_4ce.jpg" alt="" width="100%" />
+							<img src="./img/logos/181610_c9e.jpg" alt="" width="100%" />
+							<img src="./img/logos/181632_bfb.jpg" alt="" width="100%" />
+							<img src="./img/logos/181649_d54.jpg" alt="" width="100%" />
+							<img src="./img/logos/182113_203.jpg" alt="" width="100%" />
+							<img src="./img/logos/182127_bdd.jpg" alt="" width="100%" />
+							<img src="./img/logos/182140_420.jpg" alt="" width="100%" />
+							<img src="./img/logos/182209_00d.jpg" alt="" width="100%" />
+							<img src="./img/logos/182249_281.jpg" alt="" width="100%" />
+							<img src="./img/logos/182303_c95.jpg" alt="" width="100%" />
+							<img src="./img/logos/182317_33a.jpg" alt="" width="100%" />
+							<img src="./img/logos/182330_c13.jpg" alt="" width="100%" />
+							<img src="./img/logos/182343_e37.jpg" alt="" width="100%" />
+							<img src="./img/logos/182357_16b.jpg" alt="" width="100%" />
+							<img src="./img/logos/182412_c31.jpg" alt="" width="100%" />
+							<img src="./img/logos/182440_cfa.jpg" alt="" width="100%" />
+							<img src="./img/logos/182440_cfa.jpg" alt="" width="100%" />
+							<img src="./img/logos/182456_7ec.jpg" alt="" width="100%" />
+							<img src="./img/logos/182508_f9b.jpg" alt="" width="100%" />
+							<img src="./img/logos/182523_20f.jpg" alt="" width="100%" />
+							<img src="./img/logos/182540_883.jpg" alt="" width="100%" />
+							<img src="./img/logos/182606_749.jpg" alt="" width="100%" />
+							<img src="./img/logos/182618_3e6.jpg" alt="" width="100%" />
+							<img src="./img/logos/182629_c5d.jpg" alt="" width="100%" />
+							<img src="./img/logos/182641_827.jpg" alt="" width="100%" />
+						</div>
+					</marquee>
+				</div>
+			</section>
+			<!-- partnership ends -->
+		</main>
+
+		<!-- footer -->
+		<footer id="footer">
+			<div class="footer-con ds-grid">
+				<div class="ft-about ds-flex-col">
+					<img src="./img/logowhite.png" alt="logo" width="30%" />
+
+					<p>
+						We are dedicated to providing high-quality, accessible, and
+						comprehensive learning experiences in the field of psychometrics.
+						Our goal is to empower students and professionals with the knowledge
+						and skills necessary to understand and apply psychometric principles
+						effectively.
+					</p>
+					<div class="ft-social ds-flex-row">
+						<a href="#">
+							<i class="fa-brands fa-facebook-square"></i>
+						</a>
+						<a href="#">
+							<i class="fa-brands fa-instagram-square"></i>
+						</a>
+						<a href="#">
+							<i class="fa-brands fa-square-x-twitter"></i>
+						</a>
+						<a href="#">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+				<div class="link-ft ds-grid">
+					<div class="ft-links">
+						<ul>
+							<li class="ft-title">Quick Links</li>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Enrollment</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="ft-company">
+						<ul>
+							<li class="ft-title">The Pi</li>
+							<li><a href="#">Faculties</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="ft-contact">
+					<ul>
+						<li class="ft-title">Get In Touch</li>
+
+						<li class="ds-flex-row">
+							<i class="fa-solid fa-envelope"></i>
+							<div class="ds-flex-col">
+								Email Us
+								<a href="mailto:admin@thepsychometricinstitute.org"
+									>admin@thepsychometricinstitute.org</a
+								>
+							</div>
+						</li>
+						<li class="ds-flex-row">
+							<i class="fa-solid fa-phone"></i>
+							<div class="ds-flex-col">
+								Call Fot More Information
+								<a href="tel:08183343350">+2348183343350</a>
+							</div>
+						</li>
+						<li class="ds-flex-row">
+							<i class="fa-brands fa-whatsapp"></i>
+							<div class="ds-flex-col">
+								Chat Us On Whatsapp
+								<a href="#">+2349052052136</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p>
+				<center>
+					Copyright &copy;2023 The Psychometric Institute. All rights reserved
+				</center>
+			</p>
+		</footer>
+		<!-- footer ends-->
+		<!-- Project -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
